@@ -7,4 +7,10 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  resolve: {
+    alias: [
+      { find: "@components", replacement: "/src/components/index.js" },
+      { find: "@images", replacement: "../images" },
+    ],
+  },
 });
